@@ -6,7 +6,7 @@
 # Created: 01.02.2026 17:14:56
 # Author: Jeremie Rouzet
 #
-# Last Modified: 01.02.2026 18:09:54
+# Last Modified: 02.02.2026 20:59:04
 # Modified By: Jeremie Rouzet
 #
 # Copyright (c) 2026 Jeyriku.net
@@ -226,5 +226,5 @@ class RemoteSysVersChecker:
 if __name__ == '__main__':
     local_checker = LocalSysVersChecker()
     local_checker.local_check_version()
-    remote_checker = RemoteSysVersChecker()
-    remote_checker.remote_check_version()
+    # remote_checker = RemoteSysVersChecker()
+    # remote_checker.remote_check_version()
