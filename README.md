@@ -53,6 +53,15 @@ checksysvers --local
 checksysvers --remote 192.168.1.1 --device-type cisco
 ```
 
+**Demander les identifiants de manière interactive** :
+```bash
+# Pour les connexions distantes
+checksysvers --remote 192.168.1.1 --device-type cisco --prompt-credentials
+
+# Pour lister les appareils depuis Infrahub
+checksysvers --list-devices --prompt-credentials
+```
+
 **Lister les appareils depuis Infrahub** :
 ```bash
 checksysvers --list-devices
@@ -90,7 +99,9 @@ Pour les vérifications distantes :
 - `SSH_PASSWORD` : Mot de passe SSH
 - `SSH_PORT` : Port SSH (défaut: 22)
 - `INFRAHUB_API_TOKEN` : Token pour l'API Infrahub
-- `INFRAHUB_URL` : URL de l'API Infrahub (défaut: https://infrahub.example.com/graphql)
+- `INFRAHUB_URL` : URL de l'API Infrahub (défaut: https://infrahub.example.com, `/graphql` sera ajouté automatiquement)
+- `INFRAHUB_TLS_INSECURE` : Désactiver la vérification TLS/SSL (défaut: false, utiliser "true" pour désactiver)
+- `INFRAHUB_DEVICE_SCHEMA` : Nom du schéma pour les appareils dans Infrahub (défaut: JeylanDevice)
 
 ## Structure du package
 

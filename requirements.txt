@@ -1,3 +1,5 @@
 # Optional dependencies for remote checks
 httpx>=0.24.0
 infrahub>=0.1.0
+netmiko>=4.0.0
+sshpass>=1.09.0
